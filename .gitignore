@@ -1,0 +1,46 @@
+# Node modules
+**/node_modules/
+
+# SQLite databases
+**/data/
+*.db
+
+frontend/public/style.css
+
+# Env files (nunca versionar senhas ou tokens)
+**/.env
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS/Editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Docker
+**/.docker/
+
+# Optional: compiled files or test output
+dist/
+coverage/
+
+.frontend.log
+.tailwind.log
+.frontend.pid
+.tailwind.pid
+frontend/public/style.css
+/services/*-service/uploads/
+notes
+tmp
+**/server.key
+**/server.crt
+**/bundle.js
+
+root-ca.key
+server.csr
+root-ca.crt
