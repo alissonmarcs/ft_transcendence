@@ -15,7 +15,7 @@ setup()
         printf "COOKIE_SECRET=%s\n" "$(openssl rand -hex 64)" >> .env
         printf "%bSecrets done!%b\n" "$BLUE" "$RESET"
 
-        read -p "The project will be avaliable at localhost (1) or 0.0.0.0 (2) ?" res
+        read -p "The project will be avaliable at localhost (1) or at your network interface (2) ? " res
         if [ "$res" = "1" ]; then
             export IP="localhost"
             export TYPE="DNS"
