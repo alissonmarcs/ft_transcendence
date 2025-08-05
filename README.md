@@ -22,7 +22,7 @@ As the use of https is mandatory, we create two self signed certs. The first is 
 
 The file to be imported is `services/root-ca.crt`.
 
-Steps: https://javorszky.co.uk/2019/11/06/get-firefox-to-trust-your-self-signed-certificates/
+Steps to import in Firefox: https://javorszky.co.uk/2019/11/06/get-firefox-to-trust-your-self-signed-certificates/
 
 
 
