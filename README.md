@@ -11,7 +11,7 @@
 
 ## How run
 
-```
+```sh
 git clone https://github.com/alissonmarcs/ft_transcendence
 cd ft_transcendence
 cd ./ft_transcendence setup # when you be prompted about localhost, type y
@@ -24,5 +24,10 @@ The file to be imported is `services/root-ca.crt`.
 
 Steps to import in Firefox: https://javorszky.co.uk/2019/11/06/get-firefox-to-trust-your-self-signed-certificates/
 
+## How clear
 
+```sh
+docker compose down --rmi all
+./ft_transcendence setup # delete .env, service's DBs, and certs
+```
 
