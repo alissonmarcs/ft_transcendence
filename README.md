@@ -24,7 +24,7 @@ The file to be imported is `services/root-ca.crt`.
 
 Steps to import in Firefox: https://javorszky.co.uk/2019/11/06/get-firefox-to-trust-your-self-signed-certificates/
 
-When certs are done, check `IP` var  at `.env`. In your browser url bar, use "https:$IP:8080" to access the site.
+When certs are done, check `IP` var  at `.env`. In your browser url bar, use `https:$IP:8080` to access the site.
 
 ## How clear
 
