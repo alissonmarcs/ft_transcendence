@@ -14,7 +14,7 @@
 ```sh
 git clone https://github.com/alissonmarcs/ft_transcendence
 cd ft_transcendence
-cd ./ft_transcendence setup # when you be prompted about localhost, type y
+./ft_transcendence setup # create .env file and certs
 docker compose up
 ```
 
