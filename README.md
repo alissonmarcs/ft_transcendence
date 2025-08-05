@@ -30,7 +30,7 @@ When certs are done, check `IP` var  at `.env`. In your browser url bar, use `ht
 
 ```sh
 docker compose down --rmi all
-./ft_transcendence setup # delete .env, service's DBs, and certs
+./ft_transcendence clear # delete .env, service's DBs, and certs
 ```
 
 Creators: [Mateus Santos](https://github.com/Matesant), [Alisson Marcos](https://github.com/alissonmarcs), [Vinni Cedraz](https://github.com/Vinni-Cedraz), [Daniele Frade](https://github.com/daniele-frade), [Cauê Mendes](https://github.com/cauemendess)
