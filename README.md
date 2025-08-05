@@ -1,7 +1,7 @@
 <div align="center">
 	<h1>ft_transcendence</h1>
 	<img src="https://raw.githubusercontent.com/alissonmarcs/alissonmarcs/refs/heads/main/images/ft_transcendencem.png" alt="ft_transcendence project badge of 42"/>
-	<p align="center">A 42 project where we have to create an pong game.</p>
+	<p align="center">A 42 project where we have to create a pong game.</p>
 </div>
 
 <div align="center">
