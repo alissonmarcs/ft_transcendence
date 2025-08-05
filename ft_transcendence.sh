@@ -15,14 +15,16 @@ setup()
         printf "COOKIE_SECRET=%s\n" "$(openssl rand -hex 64)" >> .env
         printf "%bSecrets done!%b\n" "$BLUE" "$RESET"
 
-        read -p "The project will be avaliable in localhost ? (y/n)" res
-        if [ "$res" = "y" ]; then
+        read -p "The project will be avaliable at localhost (1) or 0.0.0.0 (2) ?" res
+        if [ "$res" = "1" ]; then
             export IP="localhost"
             export TYPE="DNS"
         else
             export IP=$(ip route get 1.1.1.1 | cut -f 7 -d ' ' | head -n 1)
             export TYPE="IP"
         fi
+
+        printf "Nice! In your broswer, use IP at .env"
 
         printf "IP=%s\n" "$IP" >> .env
         printf "%bIP address done!%b\n" "$BLUE" "$RESET"
@@ -75,7 +77,7 @@ clear()
         ./services/root-ca.{key,crt} \
         ./services/root-ca.srl \
         ./services/server.csr
-
+    printf "%bSudo need only for remove DBs of microservices%b\n" "$BLUE" "$RESET"
     sudo rm -f ./services/{user,match,auth}-service/data/*-service.db
     printf "%bCleanup done!%b\n" "$BLUE" "$RESET"
 }
