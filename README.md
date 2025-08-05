@@ -18,11 +18,13 @@ cd ft_transcendence
 docker compose up
 ```
 
-As the use of https is mandatory, we create two self signed certs. The first is the cert of CA, and the second is the cert of our backend, that were signed by the cert of CA. You must include the cert of CA in your browser to be able to use the site.
+As the use of https is mandatory, we create two self signed certs. The first is the cert of CA, and the second is the cert of our backend, that were signed by the cert of CA. You must import the cert of CA in your browser to be able to use the site.
 
 The file to be imported is `services/root-ca.crt`.
 
 Steps to import in Firefox: https://javorszky.co.uk/2019/11/06/get-firefox-to-trust-your-self-signed-certificates/
+
+When certs are done, check `IP` var  at `.env`. That is the ip you must use in your browser to access the site.
 
 ## How clear
 
