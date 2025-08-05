@@ -14,7 +14,7 @@
 ```
 git clone https://github.com/alissonmarcs/ft_transcendence
 cd ft_transcendence
-cd ./ft_transcendence setup
+./ft_transcendence setup
 docker compose up
 ```
 
